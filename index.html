@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-Type" content="text/html"  charset="utf-8"/>
+<meta name="viewpoint" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>lianxi2-固定布局</title>
+
+<link rel="stylesheet" href="css/style1.css" charset="utf-8">
+<link rel="stylesheet" href="css/basic.css" charset="utf-8">
+
+
+
+</head>
+
+<body>
+	<header id="header"> 
+			
+		<div class="center">
+			<h1 class="logo">旅行社</h1>
+				<nav class="link">
+				<h2 class="none">网站导航</h2>
+					<ul >
+						<li><a class="active" href="index.html">首页</a></li>
+						<li><a class="avtive" href="information.html">旅游咨询</a></li>
+						<li><a class="active" href="ticket.html">机票订购</a></li>
+						<li><a class="active" href="fengjing.html">风景欣赏</a></li>
+						<li><a class="active" href="company.html">公司简介</a></li>
+					</ul>
+				</nav>
+			</div>
+	</header>
+
+		
+		<div class="search"><!--在search大背景下添加图片-->
+			<div class="center1">  </div>
+			<input type="text" class="search1" placeholder="请输入景点或城市"></input>
+			<button type="submit" class="button">搜索</button>
+		</div>
+		
+		<div id="tour">
+			<section class="center">
+				<h2>热门旅游</h2>
+				<p>新疆旅游、自助旅游、自驾旅游、邮轮签证、主题旅游等各种最新热门旅游推荐</p>
+			</section>
+				<figure>
+					<img src="img/tour2.jpg" alt="热门旅游">
+						<figcaption>
+							<strong class="title">
+								&lt;那拉提6日游&gt; </strong>
+								报团特惠，超丰富景点，升一晚5星酒店，无自费/成人优惠券500元
+							 
+							    <div class="info">
+								<em class="sat">满意度 77%</em>
+								<span class="price">¥ <strong>5864</strong> 起</span>
+							</div>
+							<div class="tab">国内长线</div>
+						</figcaption>								
+					</figure>
+					
+					<figure>
+					<img src="img/tour5.jpg" alt="热门旅游">
+						<figcaption>
+							<strong class="title">
+								&lt;乌鲁木齐7日游&gt; </strong>
+								报团特惠，超丰富景点，升一晚5星酒店，无自费/成人优惠券
+							
+							    <div class="info">
+								<em class="sat">满意度 87%</em>
+								<span class="price">¥ <strong>6852</strong> 起</span>
+							</div>
+							<div class="tab">国外长线</div>
+						</figcaption>
+						
+					</figure>
+<table width="759" class="jdt">
+  <tr><td width="751">
+        <script language="javascript" type="text/javascript">
+            //<![CDATA[
+            var _t1 = 0; 	//打开页面时等待图片载入的时间，单位为秒，可以设置为0
+            var _t2 = 3; 	//图片轮转的间隔时间
+            var _tnum = 3; //焦点图个数
+            var _tn = 1;	//当前焦点
+            var _tl =null;
+            _tt1 = setTimeout('change_img()',_t1*1000);
+
+            function change_img(){
+                setFocus(_tn);
+                _tt1 = setTimeout('change_img()',_t2*1000);
+            }
+            function setFocus(i){
+                if(i>_tnum){_tn=1;i=1;}
+                _tl?document.getElementById('focusPic'+_tl).style.display='none':'';
+                document.getElementById('focusPic'+i).style.display='block';
+                _tl=i;
+                _tn++;
+            }
+            //]]>
+        </script>
+        <!--焦点图1开始 标题13字 说明30个字-->
+        <div id="focusPic1">
+			<img src="img/duku.jpg" alt="独库公路" width="700" /></a>
+          <h1><a href="#" >独库公路</a></h1>
+            <div class="index_page"><span onClick="javascript:setFocus(2);">点击切换焦点图→</span>
+                <strong>1</strong>
+                <a href="javascript:setFocus(2);">2</a>
+                <a href="javascript:setFocus(3);">3</a>
+            </div>
+      </div>
+        <!--焦点图1结束-->
+        <!--焦点图2开始  标题13字 说明30个字-->
+        <div id="focusPic2" style="display:none;">
+            <a href="#">
+                <img src="img/sailimuhu.jpg" alt="赛里木湖" width="700" /></a>
+          <h1><a href="#" >赛里木湖</a></h1>
+            <div class="index_page"><span onClick="javascript:setFocus(3);">点击切换焦点图→</span>
+                <a href="javascript:setFocus(1);">1</a>
+                <strong>2</strong>
+                <a href="javascript:setFocus(3);">3</a>
+            </div>
+      </div>
+        <!--焦点图2结束-->
+        <!--焦点图3开始  标题13字 说明30个字-->
+
+        <div id="focusPic3" style="display:none;">
+            <a href="#" >
+            <img src="img/chun.jpg" alt="伊犁" width="700" />
+            </a>
+          <h1><a href="#" >伊犁</a></h1>
+            <div class="index_page"><span onClick="javascript:setFocus(4);">点击切换焦点图→</span>
+                <a href="javascript:setFocus(1);">1</a>
+                <a href="javascript:setFocus(2);">2</a>
+                <strong>3</strong>
+            </div>
+      </div>
+        <!--焦点图3结束-->
+  </td></tr>
+</table>
+		<footer class="footer">
+			<div id="top">
+				<!--采用2个class，公共部分修改和独有修改维护方便 -->
+				<div class="block left"> 
+					<h3>合作伙伴</h3>
+					<hr><!--加一个横线-->
+					<ul>
+						<li><a href="http://www.tuniu.com/" target="_blank">途牛旅游网</a></li>
+						<li><a href="http://www.lvmama.com/" target="_blank">驴妈妈旅游网</a></li>
+						<li><a href="http://www.ctrip.com/" target="_blank">携程旅游网</a></li>
+						<li><a href="https://www.cyts.com/"target="_blank">中国青年旅行社</a></li>
+					</ul>					
+				</div>
+				
+				<div class="block center11">
+				    <h3>旅游FAQ</h3>
+					<hr>
+					<ul>
+						<li>旅游合同签订方式</li>
+						<li>儿童价是基于什么制定的?</li>
+						<li>旅游的线路品质怎么界定的？</li>
+						<li>单房差是什么?</li>
+						<li>旅游保险有那些种类?</li>
+					</ul>	
+				</div>
+			
+				
+				<div class="block right">
+					<h3>联系方式</h3>
+					<hr>
+					<ul>
+						<li>微博:weibo.com/ycku</li>
+						<li>邮件:252189983@qq.com</li>
+						<li>地址:山东省xxx路</li>
+					</ul>								
+							
+				</div>
+			</div>
+			
+			<div class="bottom">Copyright@YCUC 旅行社 | 中IUP程1516481号 | 旅行社经营许可证：ad-079797</div>
+			
+		</footer>		
+		</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
